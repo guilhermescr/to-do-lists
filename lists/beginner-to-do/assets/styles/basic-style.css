@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Saiyans';
+  src: url('../fonts/Saiyan-Sans\ Right\ Oblique.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: purple url('../imgs/supreme-kai-planet.jpg') center no-repeat
+    fixed;
+  background-size: cover;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: 'Saiyans', sans-serif;
+  text-align: center;
+  text-shadow: -7px 1px 0px #000;
+  font-size: 60px;
+  padding-block: 20px;
+  margin-inline: auto;
+}
+
+h1 .t-word-1,
+h1 .t-word-2 {
+  color: rgb(255, 208, 0);
+}
+
+h1 .t-word-3 {
+  color: rgb(214, 0, 0);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  width: 400px;
+}
+
+.setTasks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+#inputfield {
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+  outline: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+#addTask {
+  border-left: none;
+  border-block: 1px solid gray;
+  border-right: 1px solid gray;
+  background-color: rgb(192, 158, 158);
+  color: #fff;
+  font-size: 25px;
+  text-shadow: 2px 3px 0px rgb(0, 0, 0, 0.5);
+  width: 100px;
+  height: 100%;
+  cursor: pointer;
+}
+
+#addTask:hover {
+  background-color: rgb(192, 138, 138);
+  color: rgb(222, 222, 222);
+}
+
+#addTask:active {
+  background-color: rgba(192, 138, 138, 0.6);
+}
+
+.tasks {
+  border: 1px solid gray;
+  background-color: #fff;
+  height: 400px;
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  margin-top: 25px;
+  overflow-y: auto;
+  padding: 10px 10px;
+  position: relative;
+}
+
+#tasks-list {
+  list-style-image: url('../imgs/arrow-icon.png');
+  list-style-position: inside;
+  height: fit-content;
+  max-width: 378px;
+  word-wrap: break-word;
+}
+
+.li-styling {
+  margin: 0;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.li-styling::first-letter {
+  text-transform: uppercase;
+}
